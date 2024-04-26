@@ -15,6 +15,7 @@ const StyledDashboardLayout = styled.div`
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto 45rem auto;
   gap: 2.4rem;
+  padding: 1rem 0rem;
   @media (max-width: 1160px) {
     & {
       grid-template-columns: 1fr 1fr;

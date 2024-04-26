@@ -36,9 +36,9 @@ function App() {
   return (
     <DarkModeProvider>
       <QueryClientProvider client={client}>
-        <ReactQueryDevtools initialIsOpen={false} />
+        {/* <ReactQueryDevtools initialIsOpen={false} /> */}
         <GlobalStyles />
-        <BrowserRouter>
+        <BrowserRouter basename="/wildOasis">
           <Routes>
             <Route
               element={
