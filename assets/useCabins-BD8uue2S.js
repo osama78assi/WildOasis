@@ -1,1 +1,0 @@
-import{n as i}from"./index-DsZ-KJuj.js";import{g as t}from"./apiCabins-DBCjF2WU.js";function u(){const n=["cabin"],{isPending:r,data:e,error:s}=i({queryKey:n,queryFn:t});return{isFetching:r,cabins:e,error:s,queryKey:n}}export{u};
