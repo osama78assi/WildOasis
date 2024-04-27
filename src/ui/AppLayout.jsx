@@ -39,11 +39,11 @@ function AppLayout() {
       <Header />
       <Sidebar />
       <Main>
-        <Container>
-          <Suspense fallback={<LoadingDiv additionalStyle="height: 100%" />}>
+        <Suspense fallback={<LoadingDiv additionalStyle="height: 100%" />}>
+          <Container>
             <Outlet />
-          </Suspense>
-        </Container>
+          </Container>
+        </Suspense>
       </Main>
     </StyledAppLayout>
   );
