@@ -1,0 +1,1 @@
+import{n as i}from"./index-CeYRl1xh.js";import{g as t}from"./apiCabins-g62jijii.js";function u(){const n=["cabin"],{isPending:r,data:e,error:s}=i({queryKey:n,queryFn:t});return{isFetching:r,cabins:e,error:s,queryKey:n}}export{u};
