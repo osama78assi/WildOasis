@@ -1,10 +1,13 @@
 import { lazy } from "react";
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { Toaster } from "react-hot-toast";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import DarkModeProvider from "./contexts/DarkMode";
+import PageNotFound from "./pages/PageNotFound";
+import GlobalStyles from "./styles/GlobalStyling";
+import AppLayout from "./ui/AppLayout";
+import ProtectedRoute from "./ui/ProtectedRoute";
 const AddBooking = lazy(() => import("./pages/AddBooking"));
 const AddCabin = lazy(() => import("./pages/AddCabin"));
 const AddGuest = lazy(() => import("./pages/AddGuest"));
@@ -15,12 +18,8 @@ const Cabins = lazy(() => import("./pages/Cabins"));
 const Checkin = lazy(() => import("./pages/Checkin"));
 const Dashboard = lazy(() => import("./pages/Dashboard"));
 const Login = lazy(() => import("./pages/Login"));
-import PageNotFound from "./pages/PageNotFound";
 const Settings = lazy(() => import("./pages/Settings"));
 const Users = lazy(() => import("./pages/Users"));
-import GlobalStyles from "./styles/GlobalStyling";
-import AppLayout from "./ui/AppLayout";
-import ProtectedRoute from "./ui/ProtectedRoute";
 const Account = lazy(() => import("./pages/Account"));
 
 const client = new QueryClient({
@@ -38,7 +37,6 @@ function App() {
       <QueryClientProvider client={client}>
         {/* <ReactQueryDevtools initialIsOpen={false} /> */}
         <GlobalStyles />
-        {/* <BrowserRouter basename="/wildOasis"> */}
         <BrowserRouter>
           <Routes>
             <Route
