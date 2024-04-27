@@ -3,12 +3,13 @@ import { createContext, useContext } from "react";
 import styled, { css } from "styled-components";
 
 const StyledTable = styled.div`
+  position: relative;
+  z-index: 1;
   border: 1px solid var(--color-grey-200);
-
+  border-width: 0px 1px;
   font-size: 1.4rem;
   background-color: var(--color-grey-0);
-  border-radius: 7px;
-  overflow: hidden;
+  border-radius: var(--border-radius-lg);
 
   @media (max-width: ${(props) => props.$fixWidthAt || 700}px) {
     & {
@@ -44,7 +45,12 @@ const CommonRow = styled.div`
 `;
 
 const StyledHeader = styled(CommonRow)`
+  position: sticky;
+  top: 0px;
   padding: 1.6rem 2.4rem;
+  border-top: 1px solid var(--color-grey-200);
+  z-index: 11;
+  box-shadow: 0px 0px 5px var(--color-grey-200);
 
   background-color: var(--color-grey-50);
   border-bottom: 1px solid var(--color-grey-100);
@@ -80,6 +86,12 @@ const StyledBody = styled.section`
 `;
 
 const Footer = styled.footer`
+  position: sticky;
+  bottom: 0px;
+  z-index: 11;
+  box-shadow: 1px 0px 5px var(--color-grey-200);
+
+  border-bottom: 1px solid var(--color-grey-200);
   background-color: var(--color-grey-50);
   display: flex;
   justify-content: center;

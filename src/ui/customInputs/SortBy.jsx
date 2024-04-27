@@ -44,7 +44,7 @@ const StyledSelect = styled.div`
   overflow: hidden;
   left: 0;
   top: calc(100% - 1px);
-  z-index: 10;
+  z-index: 15;
   min-width: 11rem;
   width: 100%;
   font-size: 1.4rem;

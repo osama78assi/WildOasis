@@ -22,7 +22,7 @@ function Bookings() {
         <BookingTableOperations />
       </Row>
 
-      <Row style={{ overflow: "auto" }}>
+      <Row>
         <BookingTable />
       </Row>
     </>
