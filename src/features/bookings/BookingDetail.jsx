@@ -45,7 +45,7 @@ function BookingDetail() {
   if (error) {
     toast.error("Booking detail can't be loaded", { duration: 5000 });
     return (
-      <Row $type="vertical">
+      <Row $type="vertical" style={{padding: "1rem 0rem"}}>
         <ButtonText onClick={moveBack} style={{width: "fit-content", alignSelf: "end"}}>&larr; Back</ButtonText>
         <ErrorMsg
           faildFor={`booking #${bookingId}`}

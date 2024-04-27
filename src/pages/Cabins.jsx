@@ -19,7 +19,7 @@ function Cabins() {
         <CabinTableOperations />
       </Row>
 
-      <Row>
+      <Row style={{height: "46rem"}} >
         <CabinTable />
       </Row>
     </>

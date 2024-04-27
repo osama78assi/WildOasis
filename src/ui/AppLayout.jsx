@@ -8,11 +8,8 @@ import Sidebar from "./sidebar/Sidebar";
 
 const Main = styled.main`
   overflow: auto;
-  padding: 4rem 4.8rem 6.4rem;
+  padding: 2rem 1.8rem 3.4rem;
   background-color: var(--color-grey-50);
-  @media (max-width: 1200px) {
-    padding: 2rem 1.8rem 3.4rem;
-  }
 `;
 
 const StyledAppLayout = styled.div`
@@ -34,7 +31,6 @@ const Container = styled.div`
   gap: 3.2rem;
   max-width: 120rem;
   margin: 0 auto;
-  height: 100%;
 `;
 
 function AppLayout() {

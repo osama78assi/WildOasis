@@ -22,7 +22,6 @@ const StyledBookingDataBox = styled.section`
   border: 1px solid var(--color-grey-100);
   border-radius: var(--border-radius-md);
 
-  overflow: hidden;
 `;
 
 const Section = styled.section`

@@ -22,7 +22,7 @@ function Bookings() {
         <BookingTableOperations />
       </Row>
 
-      <Row>
+      <Row style={{height: "45rem"}}>
         <BookingTable />
       </Row>
     </>

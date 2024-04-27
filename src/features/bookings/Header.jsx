@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const Header = styled.header`
+  border-radius: var(--border-radius-md) var(--border-radius-md) 0 0;
   background-color: var(--color-brand-500);
   padding: 2rem 4rem;
   color: #e0e7ff;

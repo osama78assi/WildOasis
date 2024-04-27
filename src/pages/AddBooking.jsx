@@ -24,7 +24,7 @@ function AllGuests() {
           isFetching={isFetching}
         />
       </Row>
-      <Row style={{ overflow: "visible" }}>
+      <Row style={{ overflow: "visible"}}>
         <AddSingleBooking />
       </Row>
     </>
