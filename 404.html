@@ -8,8 +8,7 @@
   <body>
     <script>
       // Redirect all requests to the base URL (index.html)
-      var target = location.pathname.replace(/\/[^\/]*$/, "/index.html");
-      location.replace(target);
+      history.replaceState([], "", window.location.href);
     </script>
   </body>
 </html>
