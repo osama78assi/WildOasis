@@ -1,8 +1,5 @@
 import supabase, { supabaseUrl } from "./supabase";
 
-// magolon226@hisotyr.com, lili123#
-// osama@example.com, osama123#
-// magolon226@hisotyr.com, fakefake
 
 export async function signup({ fullName, email, password }) {
   const { data, error } = await supabase.auth.signUp({
