@@ -8,6 +8,7 @@ const Container = styled.div`
   display: flex;
   border-radius: var(--border-radius-sm);
   > :first-child {
+    width: ${(props) => props.$parent}%;
     flex-basis: ${(props) => props.$parent}%;
     border-right: none;
     border-top-right-radius: 0px;
